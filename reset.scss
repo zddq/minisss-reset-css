@@ -1,0 +1,60 @@
+// 根元素
+html,
+// 文档元数据
+head,title,base,link,meta,style,
+// 内容分区(语义化布局标签)
+body,header,nav,main,search,section,article,aside,footer,div,hgroup,address,
+// 标题
+h1,h2,h3,h4,h5,h6,
+// 文本内容
+p,ol,ul,menu,li,dl,dt,dd,hr,pre,figure,figcaption,blockquote,
+// 内联文本语义
+a,em,strong,small,s,cite,q,dfn,abbr,ruby,rt,rp,data,time,code,var,samp,kbd,sub,sup,i,b,u,mark,bdi,bdo,span,br,wbr,del,ins,
+// 图形和多媒体
+img,picture,source,audio,video,track,embed,object,param,iframe,
+// 脚本
+script,noscript,canvas,svg,math,
+// 表格
+table,caption,colgroup,col,thead,tbody,tr,td,td,tfoot,
+// 表单
+form,label,input,button,select,datalist,optgroup,option,textarea,output,progress,meter,fieldset,legend,
+// 交互元素
+details,summary,dialog,
+// 流内容
+map,area,
+// Web组件
+slot,template {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+[hidden] {
+  display: none;
+}
+[disabled] {
+  cursor: not-allowed;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
